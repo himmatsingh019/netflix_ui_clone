@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:netflix_ui/widgets/appbar.dart';
+import 'package:netflix_ui/theme/gradient.dart';
 
 class HomeScreen extends StatelessWidget {
   final double width = Get.width;
@@ -8,57 +10,37 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black54,
+      backgroundColor: Colors.black,
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Column(
+          child: Stack(
             children: <Widget>[
-              Stack(
-                children: <Widget>[
-                  Container(
-                    width: width,
-                    height: 520,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/poster.jpg'),
-                        fit: BoxFit.fitWidth,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(top: 8.0, left: 8.0, right: 8.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Container(
-                          height: 26,
-                          width: 26,
-                          child: Image.asset('assets/logo.png'),
-                        ),
-                        Icon(
-                          Icons.cast_rounded,
-                          color: Colors.white,
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 10),
-                  Positioned(
-                    top: 30,
-                    left: width / 5,
-                    child: Row(
+              Container(
+                width: width,
+                height: 600,
+                child: Image.asset(
+                  'assets/naruto.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
+              gradientUp(),
+              gradientDown(),
+              Container(
+                child: Column(
+                  children: <Widget>[
+                    appBar(),
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         TextButton(
                           onPressed: () {
-                            print('TV shows clicked');
+                            print('Tv shows clicked');
                           },
                           child: Text(
                             'TV Shows',
                             style: TextStyle(
-                              fontSize: 14,
                               color: Colors.white,
+                              fontSize: 14,
                             ),
                           ),
                         ),
@@ -69,8 +51,8 @@ class HomeScreen extends StatelessWidget {
                           child: Text(
                             'Movies',
                             style: TextStyle(
-                              fontSize: 14,
                               color: Colors.white,
+                              fontSize: 14,
                             ),
                           ),
                         ),
@@ -81,15 +63,68 @@ class HomeScreen extends StatelessWidget {
                           child: Text(
                             'Categories',
                             style: TextStyle(
-                              fontSize: 14,
                               color: Colors.white,
+                              fontSize: 14,
                             ),
                           ),
                         ),
                       ],
                     ),
-                  ),
-                ],
+                  ],
+                ),
+              ),
+              Positioned(
+                bottom: height - 756,
+                left: 50,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    IconButton(
+                      onPressed: () {
+                        print('MyList print');
+                      },
+                      icon: Icon(
+                        Icons.favorite_border_outlined,
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(width: 60),
+                    Container(
+                      width: 80,
+                      height: 36,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.rectangle,
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(
+                            Icons.play_arrow_sharp,
+                            size: 30,
+                          ),
+                          Text(
+                            'Play',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: 60),
+                    IconButton(
+                      onPressed: () {
+                        print('Info clicked');
+                      },
+                      icon: Icon(
+                        Icons.info_outline_rounded,
+                        color: Colors.white,
+                        semanticLabel: 'info',
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
