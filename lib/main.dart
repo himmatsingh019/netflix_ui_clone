@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:netflix_ui/screens/home.dart';
+import 'package:netflix_ui/screens/comingsoon.dart';
 import 'package:netflix_ui/theme/theme.dart';
 
 void main() {
