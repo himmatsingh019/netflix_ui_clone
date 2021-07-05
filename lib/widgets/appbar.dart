@@ -7,7 +7,7 @@ Widget appBar() {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         Image.asset(
-          'assets/logo.png',
+          'assets/posters/logo.png',
           width: 20,
         ),
         Icon(

@@ -37,23 +37,23 @@ class ComingSoonScreen extends StatelessWidget {
               width: width,
               body:
                   '\nAfter the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos actions and restore balance to the universe.',
-              image: 'assets/endgame.jpg',
-              logoimage: 'assets/endgame1.png',
+              image: 'assets/posters/endgame.jpg',
+              logoimage: 'assets/posters/endgame1.png',
               title: 'Avengers Endgame',
             ),
             SizedBox(height: 30),
             Tile(
                 width: width,
-                image: 'assets/kaisen.jpg',
-                logoimage: 'assets/kaisen1.png',
+                image: 'assets/posters/kaisen.jpg',
+                logoimage: 'assets/posters/kaisen1.png',
                 title: 'Jujutsu Kaisen',
                 body:
                     '\nA boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself. He enters a shaman\'s school to be able to locate the demon\'s other body parts and thus exorcise himself.'),
             SizedBox(height: 30),
             Tile(
                 width: width,
-                image: 'assets/heist.jpg',
-                logoimage: 'assets/heist1.png',
+                image: 'assets/posters/heist.jpg',
+                logoimage: 'assets/posters/heist1.png',
                 title: 'Money Heist',
                 body:
                     '\nAn unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.')

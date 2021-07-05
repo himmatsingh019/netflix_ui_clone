@@ -33,7 +33,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
                 Text(
                   'Home',
                   style: TextStyle(
-                      fontSize: 14,
+                      fontSize: 10,
                       fontWeight: FontWeight.w300,
                       color: Colors.grey[400]),
                 ),
@@ -48,14 +48,14 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
             child: Column(
               children: [
                 Icon(
-                  Icons.play_arrow_outlined,
+                  Icons.queue_play_next_outlined,
                   size: 26,
                   color: Colors.grey[400],
                 ),
                 Text(
                   'Coming Soon',
                   style: TextStyle(
-                      fontSize: 14,
+                      fontSize: 10,
                       fontWeight: FontWeight.w300,
                       color: Colors.grey[400]),
                 ),
@@ -76,7 +76,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
                 Text(
                   'Search',
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 10,
                     fontWeight: FontWeight.w300,
                     color: Colors.grey[400],
                   ),
@@ -98,7 +98,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
                 Text(
                   'Downloads',
                   style: TextStyle(
-                      fontSize: 14,
+                      fontSize: 10,
                       fontWeight: FontWeight.w300,
                       color: Colors.grey[400]),
                 ),

@@ -71,32 +71,32 @@ class SearchScreen extends StatelessWidget {
               ),
               SizedBox(height: 10),
               SearchTile(
-                image: 'assets/office.jpg',
+                image: 'assets/posters/office.jpg',
                 title: 'The Office',
               ),
               SizedBox(height: 10),
               SearchTile(
-                image: 'assets/b99.jpeg',
+                image: 'assets/posters/b99.jpeg',
                 title: 'Brooklyn \nNine-Nine',
               ),
               SizedBox(height: 10),
               SearchTile(
-                image: 'assets/shippuden.jpg',
+                image: 'assets/posters/shippuden.jpg',
                 title: 'Naruto \nShippuden',
               ),
               SizedBox(height: 10),
               SearchTile(
-                image: 'assets/friends.jpg',
+                image: 'assets/posters/friends.jpg',
                 title: 'Friends',
               ),
               SizedBox(height: 10),
               SearchTile(
-                image: 'assets/bbt.jpg',
+                image: 'assets/posters/bbt.jpg',
                 title: 'Big Bang\nTheory',
               ),
               SizedBox(height: 10),
               SearchTile(
-                image: 'assets/robot.jpeg',
+                image: 'assets/posters/robot.jpeg',
                 title: 'Mr. Robot',
               ),
             ],

@@ -20,7 +20,7 @@ Widget trendingList() {
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 16),
               child: Image.asset(
-                'assets/bb.jpg',
+                'assets/posters/bb.jpg',
                 height: 200,
                 width: 126,
                 fit: BoxFit.fitWidth,
@@ -29,7 +29,7 @@ Widget trendingList() {
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 14),
               child: Image.asset(
-                'assets/naruto.jpg',
+                'assets/posters/naruto.jpg',
                 height: 200,
                 width: 126,
                 fit: BoxFit.fitWidth,
@@ -38,7 +38,7 @@ Widget trendingList() {
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 14),
               child: Image.asset(
-                'assets/boruto.jpg',
+                'assets/posters/boruto.jpg',
                 height: 200,
                 width: 126,
                 fit: BoxFit.fitWidth,
@@ -47,7 +47,7 @@ Widget trendingList() {
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 14),
               child: Image.asset(
-                'assets/st.jpeg',
+                'assets/posters/st.jpeg',
                 height: 200,
                 width: 126,
                 fit: BoxFit.fitWidth,
@@ -56,7 +56,7 @@ Widget trendingList() {
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 14),
               child: Image.asset(
-                'assets/daredevil.jpg',
+                'assets/posters/daredevil.jpg',
                 height: 200,
                 width: 126,
                 fit: BoxFit.fitWidth,
@@ -65,7 +65,7 @@ Widget trendingList() {
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 14),
               child: Image.asset(
-                'assets/aot.jpeg',
+                'assets/posters/aot.jpeg',
                 height: 200,
                 width: 126,
                 fit: BoxFit.fitWidth,
@@ -74,7 +74,7 @@ Widget trendingList() {
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 2),
               child: Image.asset(
-                'assets/naruto1.jpg',
+                'assets/posters/naruto1.jpg',
                 height: 200,
                 width: 126,
                 fit: BoxFit.fitWidth,

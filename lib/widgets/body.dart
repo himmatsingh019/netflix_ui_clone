@@ -20,7 +20,7 @@ Widget body() {
                 width: width,
                 height: 600,
                 child: Image.asset(
-                  'assets/naruto.jpg',
+                  'assets/posters/naruto.jpg',
                   fit: BoxFit.cover,
                 ),
               ),
