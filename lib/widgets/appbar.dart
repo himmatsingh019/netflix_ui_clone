@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 Widget appBar() {
   return Padding(
@@ -6,9 +7,14 @@ Widget appBar() {
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
-        Image.asset(
-          'assets/posters/logo.png',
-          width: 20,
+        GestureDetector(
+          onTap: () {
+            Get.toNamed('/home');
+          },
+          child: Image.asset(
+            'assets/posters/logo.png',
+            width: 20,
+          ),
         ),
         Icon(
           Icons.cast,

@@ -20,59 +20,57 @@ Widget body() {
                 width: width,
                 height: 600,
                 child: Image.asset(
-                  'assets/posters/naruto.jpg',
+                  'assets/posters/naruto1.jpg',
                   fit: BoxFit.cover,
                 ),
               ),
               gradientUp(),
               gradientDown(600),
-              Container(
-                child: Column(
-                  children: <Widget>[
-                    appBar(),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: <Widget>[
-                        TextButton(
-                          onPressed: () {
-                            print('Tv shows clicked');
-                          },
-                          child: Text(
-                            'TV Shows',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                            ),
+              Column(
+                children: <Widget>[
+                  appBar(),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      TextButton(
+                        onPressed: () {
+                          print('Tv shows clicked');
+                        },
+                        child: Text(
+                          'TV Shows',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
                           ),
                         ),
-                        TextButton(
-                          onPressed: () {
-                            print('Movies clicked');
-                          },
-                          child: Text(
-                            'Movies',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                            ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          print('Movies clicked');
+                        },
+                        child: Text(
+                          'Movies',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
                           ),
                         ),
-                        TextButton(
-                          onPressed: () {
-                            print('Categories clicked');
-                          },
-                          child: Text(
-                            'Categories',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                            ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          print('Categories clicked');
+                        },
+                        child: Text(
+                          'Categories',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
                           ),
                         ),
-                      ],
-                    ),
-                  ],
-                ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
               Positioned(
                 bottom: height - 756,

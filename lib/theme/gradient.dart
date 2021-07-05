@@ -7,6 +7,7 @@ Widget gradientUp() {
       gradient: LinearGradient(
         colors: [
           Colors.black87,
+          Colors.black38,
           Colors.transparent,
         ],
         begin: Alignment.topCenter,
