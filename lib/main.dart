@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       theme: getMaterialApp(context),
       debugShowCheckedModeBanner: false,
-      initialRoute: '/comingsoon',
+      initialRoute: '/search',
       getPages: [
         GetPage(
           name: '/home',
