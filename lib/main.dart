@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:netflix_ui/screens/download.dart';
 import 'package:netflix_ui/screens/home.dart';
 import 'package:netflix_ui/screens/comingsoon.dart';
+import 'package:netflix_ui/screens/search.dart';
+
 import 'package:netflix_ui/theme/theme.dart';
 
 void main() {
@@ -14,11 +17,23 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       theme: getMaterialApp(context),
       debugShowCheckedModeBanner: false,
-      initialRoute: '/home',
+      initialRoute: '/comingsoon',
       getPages: [
         GetPage(
           name: '/home',
           page: () => HomeScreen(),
+        ),
+        GetPage(
+          name: '/comingsoon',
+          page: () => ComingSoonScreen(),
+        ),
+        GetPage(
+          name: '/search',
+          page: () => SearchScreen(),
+        ),
+        GetPage(
+          name: '/download',
+          page: () => DownloadScreen(),
         ),
       ],
     );

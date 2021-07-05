@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:netflix_ui/widgets/body.dart';
-
 import 'package:netflix_ui/widgets/bottomBar.dart';
 
-class HomeScreen extends StatelessWidget {
+class SearchScreen extends StatelessWidget {
+  const SearchScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: CustomNavigationBar(),
-      backgroundColor: Colors.black,
-      body: body(),
+      body: Center(child: Text('Search')),
     );
   }
 }

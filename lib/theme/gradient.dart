@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 Widget gradientUp() {
   return Container(
@@ -17,9 +16,9 @@ Widget gradientUp() {
   );
 }
 
-Widget gradientDown() {
+Widget gradientDown(double height) {
   return Container(
-    height: 600,
+    height: height,
     decoration: const BoxDecoration(
       gradient: LinearGradient(colors: [
         Colors.black,
