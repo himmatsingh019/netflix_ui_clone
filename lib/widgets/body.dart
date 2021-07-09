@@ -1,3 +1,6 @@
+import 'package:netflix_ui/widgets/anime.dart';
+import 'package:netflix_ui/widgets/originals.dart';
+import 'package:netflix_ui/widgets/shows.dart';
 import 'package:netflix_ui/widgets/trendinglist.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix_ui/widgets/appbar.dart';
@@ -130,7 +133,13 @@ Widget body() {
             ],
           ),
           SizedBox(height: 10),
+          tvShows(),
+          SizedBox(height: 10),
           trendingList(),
+          SizedBox(height: 10),
+          anime(),
+          SizedBox(height: 10),
+          netflixOriginals(),
         ],
       ),
     ),

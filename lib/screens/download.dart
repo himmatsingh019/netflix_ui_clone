@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:netflix_ui/widgets/body.dart';
 import 'package:netflix_ui/widgets/bottomBar.dart';
 
@@ -94,18 +95,23 @@ class DownloadScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 30),
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 50),
-                height: 40,
-                width: width,
-                color: Colors.white,
-                child: Center(
-                  child: Text(
-                    'See What You Can Download',
-                    style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black),
+              GestureDetector(
+                onTap: () {
+                  Get.toNamed('/home');
+                },
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 50),
+                  height: 40,
+                  width: width,
+                  color: Colors.white,
+                  child: Center(
+                    child: Text(
+                      'See What You Can Download',
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                    ),
                   ),
                 ),
               ),

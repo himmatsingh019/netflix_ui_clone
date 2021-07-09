@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-Widget trendingList() {
+Widget tvShows() {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
+    children: <Widget>[
       Text(
-        'Trending Now',
+        'TV Shows',
         style: TextStyle(
           color: Colors.white,
           fontSize: 16,
@@ -18,65 +18,79 @@ Widget trendingList() {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 16),
-              child: Image.asset(
-                'assets/posters/bb.jpg',
+              child: Container(
                 height: 200,
                 width: 126,
-                fit: BoxFit.fitWidth,
+                child: Image.asset(
+                  'assets/posters/two.jpg',
+                  fit: BoxFit.fitWidth,
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 14),
-              child: Image.asset(
-                'assets/posters/naruto.jpg',
+              child: Container(
                 height: 200,
                 width: 126,
-                fit: BoxFit.fitWidth,
+                child: Image.asset(
+                  'assets/posters/mha.jpg',
+                  fit: BoxFit.fitWidth,
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 14),
-              child: Image.asset(
-                'assets/posters/boruto.jpg',
+              child: Container(
                 height: 200,
                 width: 126,
-                fit: BoxFit.fitWidth,
+                child: Image.asset(
+                  'assets/posters/holmes.jpg',
+                  fit: BoxFit.fitWidth,
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 14),
-              child: Image.asset(
-                'assets/posters/st.jpeg',
+              child: Container(
                 height: 200,
                 width: 126,
-                fit: BoxFit.fitWidth,
+                child: Image.asset(
+                  'assets/posters/witcher.jpg',
+                  fit: BoxFit.fitWidth,
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 14),
-              child: Image.asset(
-                'assets/posters/daredevil.jpg',
+              child: Container(
                 height: 200,
                 width: 126,
-                fit: BoxFit.fitWidth,
+                child: Image.asset(
+                  'assets/posters/luci.jpg',
+                  fit: BoxFit.fitWidth,
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 14),
-              child: Image.asset(
-                'assets/posters/aot.jpeg',
+              child: Container(
                 height: 200,
                 width: 126,
-                fit: BoxFit.fitWidth,
+                child: Image.asset(
+                  'assets/posters/vikings.jpg',
+                  fit: BoxFit.fitWidth,
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 2.0, right: 2),
-              child: Image.asset(
-                'assets/posters/naruto1.jpg',
+              child: Container(
                 height: 200,
                 width: 126,
-                fit: BoxFit.fitWidth,
+                child: Image.asset(
+                  'assets/posters/academy.jpg',
+                  fit: BoxFit.fitWidth,
+                ),
               ),
             ),
           ],

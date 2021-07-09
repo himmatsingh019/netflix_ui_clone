@@ -1,20 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class CustomNavigationBar extends StatefulWidget {
-  @override
-  _CustomNavigationBarState createState() => _CustomNavigationBarState();
-}
-
-class _CustomNavigationBarState extends State<CustomNavigationBar> {
-  final double width = Get.width;
-
+class CustomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: width,
+      margin: EdgeInsets.only(top: 4),
       color: Colors.black,
-      height: 56,
+      height: 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
