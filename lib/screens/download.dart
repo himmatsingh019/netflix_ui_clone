@@ -43,23 +43,28 @@ class DownloadScreen extends StatelessWidget {
                 color: Colors.white12,
                 child: Padding(
                   padding: const EdgeInsets.only(left: 12.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.info_outline,
-                        color: Colors.white,
-                      ),
-                      SizedBox(width: 10),
-                      Text(
-                        'Smart Downloads',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      SizedBox(width: 4),
-                      Text(
-                        'ON',
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                    ],
+                  child: GestureDetector(
+                    onTap: () {
+                      Get.toNamed('/smart');
+                    },
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.info_outline,
+                          color: Colors.white,
+                        ),
+                        SizedBox(width: 10),
+                        Text(
+                          'Smart Downloads',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        SizedBox(width: 4),
+                        Text(
+                          'ON',
+                          style: TextStyle(color: Colors.blue),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
