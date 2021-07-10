@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:netflix_ui/widgets/body.dart';
-import 'package:netflix_ui/widgets/bottomBar.dart';
+import 'package:netflix_ui/screens/homescreen.dart';
 
 class DownloadScreen extends StatelessWidget {
   const DownloadScreen({Key? key}) : super(key: key);
@@ -10,7 +9,7 @@ class DownloadScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      bottomNavigationBar: CustomNavigationBar(),
+      // bottomNavigationBar: CustomNavigationBar(),
       appBar: AppBar(
         toolbarHeight: 50,
         automaticallyImplyLeading: false,

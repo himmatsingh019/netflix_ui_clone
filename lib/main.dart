@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/route_manager.dart';
+import 'package:netflix_ui/controllers/navigation_controller.dart';
+import 'package:netflix_ui/controllers/navigation_bindings.dart';
 import 'package:netflix_ui/screens/download.dart';
-import 'package:netflix_ui/screens/home.dart';
+import 'package:netflix_ui/screens/homescreen.dart';
+import 'package:netflix_ui/screens/navigation.dart';
 import 'package:netflix_ui/screens/comingsoon.dart';
 import 'package:netflix_ui/screens/profile.dart';
 import 'package:netflix_ui/screens/search.dart';
@@ -22,6 +26,11 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/profile',
           page: () => ProfileScreen(),
+        ),
+        GetPage(
+          name: '/navigation',
+          page: () => NavigationScreen(),
+          binding: NavigationBinding(),
         ),
         GetPage(
           name: '/home',

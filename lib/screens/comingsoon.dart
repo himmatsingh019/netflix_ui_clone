@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:netflix_ui/theme/gradient.dart';
-import 'package:netflix_ui/widgets/bottomBar.dart';
 
 class ComingSoonScreen extends StatelessWidget {
-  final double width = Get.width;
+  const ComingSoonScreen();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      bottomNavigationBar: CustomNavigationBar(),
+      // bottomNavigationBar: CustomNavigationBar(),
       appBar: AppBar(
         toolbarHeight: 50,
         backgroundColor: Colors.black,
@@ -34,7 +33,7 @@ class ComingSoonScreen extends StatelessWidget {
           padding: EdgeInsets.all(2),
           child: Column(children: <Widget>[
             Tile(
-              width: width,
+              width: Get.width,
               body:
                   '\nAfter the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos actions and restore balance to the universe.',
               image: 'assets/posters/endgame.jpg',
@@ -43,7 +42,7 @@ class ComingSoonScreen extends StatelessWidget {
             ),
             SizedBox(height: 30),
             Tile(
-                width: width,
+                width: Get.width,
                 image: 'assets/posters/kaisen.jpg',
                 logoimage: 'assets/posters/kaisen1.png',
                 title: 'Jujutsu Kaisen',
@@ -51,7 +50,7 @@ class ComingSoonScreen extends StatelessWidget {
                     '\nA boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself. He enters a shaman\'s school to be able to locate the demon\'s other body parts and thus exorcise himself.'),
             SizedBox(height: 30),
             Tile(
-                width: width,
+                width: Get.width,
                 image: 'assets/posters/heist.jpg',
                 logoimage: 'assets/posters/heist1.png',
                 title: 'Money Heist',

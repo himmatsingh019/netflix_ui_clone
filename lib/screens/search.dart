@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:netflix_ui/widgets/bottomBar.dart';
 import 'package:netflix_ui/widgets/searchtile.dart';
 
 class SearchScreen extends StatelessWidget {
-  final double width = Get.width;
+  const SearchScreen();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      bottomNavigationBar: CustomNavigationBar(),
+      // bottomNavigationBar: CustomNavigationBar(),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: EdgeInsets.all(2),
@@ -24,7 +23,7 @@ class SearchScreen extends StatelessWidget {
                   children: [
                     Container(
                       height: 30,
-                      width: width - 62,
+                      width: Get.width - 62,
                       decoration: BoxDecoration(
                         color: Colors.grey[800],
                         borderRadius: BorderRadius.circular(6),

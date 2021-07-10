@@ -42,7 +42,7 @@ class ProfileScreen extends StatelessWidget {
               children: [
                 GestureDetector(
                   onTap: () {
-                    Get.toNamed('/home');
+                    Get.toNamed('/navigation');
                     print('Red CLicked');
                   },
                   child: Column(children: [
